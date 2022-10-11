@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+
+{% block titulo%}Eliminar Cliente{%endblock%}
+
+{% block contenido %}
+
+                <h1>{{ tituloh1 }}</h1>
+
+                <h2>Está seguro de eliminar el cliente {{nombre_cliente}}</h2>
+
+                <form action="" method="post" class="form">
+                        {% csrf_token %}
+
+                        
+
+
+
+
+                    <button type="submit" class="btn btn-danger">Sí</button>
+                    <a href="{% url 'clientes' %" class="btn btn-info">No</a>
+
+                </form>
+
+
+
+{% endblock %}

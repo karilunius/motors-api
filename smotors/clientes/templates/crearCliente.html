@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+
+{% block titulo%}Crear Cliente{%endblock%}
+
+{% block contenido %}
+
+    <h1>{{tituloh1}}</h1>
+    <form action=""    method="post" class="form">
+        {% csrf_token %}
+        
+        {% bootstrap_form form %}
+
+        <!--sci quiero que queden mas cortos el pro sugiere
+        hacer unas lineas de cod por cada dato-->
+        <!-- {{form.nombre.label}} -->
+        <!-- REFERENTE-DE LECTURA
+        https://django-bootstrap-v5.readthedocs.io/en/latest/ -->
+
+
+
+
+        <!--  <p>{{ form.as_p }}</p> -->
+    
+        <!-- DNI<input type="text" name="cedula o DNI">
+        Nombre  <input type="text" name="nombre">
+        Apellidos <input type="text" name="nombre">
+        Nombre <input type="text" name="nombre">
+        Nombre <input type="text" name="nombre">
+        Nombre <input type="text" name="nombre">
+        Nombre <input type="text" name="nombre">
+        Nombre <input type="text" name="nombre"> -->
+    
+    <button type="submit-disable" class="btn btn-info">Enviar</button>
+
+    </form>
+
+
+
+{% endblock %}
