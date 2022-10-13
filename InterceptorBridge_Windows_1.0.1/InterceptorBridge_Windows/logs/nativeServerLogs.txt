@@ -1,0 +1,4 @@
+Thu Oct 13 2022 16:17:32 GMT-0500 (GMT-05:00): Started interceptor bridge process
+
+Thu Oct 13 2022 16:17:32 GMT-0500 (GMT-05:00): Current directory: C:\Users\Karol\Desktop\motors-api\InterceptorBridge_Windows_1.0.1\InterceptorBridge_Windows
+

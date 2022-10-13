@@ -1,9 +1,9 @@
-from django.shortcuts import render, HttpResponse, redirect
+from django.shortcuts import HttpResponse, redirect, render
 
+from .formsCliente import ClienteForm
 #from smotors.clientes.formsCliente import ClienteForm
 from .models import Clientes
 
-from .formsCliente import ClienteForm
 # Create your views here.
 #@app.route('/ ')
 
