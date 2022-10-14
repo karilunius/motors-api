@@ -19,10 +19,10 @@ from django.urls import include, path
 from .router import router
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls), #el defecto
     path('', include('clientes.urls')),
-    path("clientes/rest", include(router.urls)),
-    path('api-auth/', include('rest_framework.urls'))
+    path("api/clientes/", include(router.urls)), #este es el del vid natsoft
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
 
 #http: // 127.0.0.1: 8000/clientes/
